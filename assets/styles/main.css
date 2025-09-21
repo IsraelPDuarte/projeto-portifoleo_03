@@ -123,6 +123,7 @@
     padding: 30px;
     background: rgba(1, 9, 28, 0.9);
     border-radius: 15px;
+
      a {
             
             display: inline-block;
@@ -187,10 +188,10 @@
     .apresentacao {
         text-align: center;
         h1 {
-            font-size: 64px;
+            font-size: 48px;
         }
         h2 {
-            font-size: 26px;
+            font-size: 18px;
         }
         p {
             width: 100%;
@@ -199,6 +200,7 @@
         a {
             width: 100%;
             margin-block: 50px;
+            font-size: 20px;
         }
     }
     .article {
@@ -219,14 +221,28 @@
         }
     }
     .projetos {
+        h1 {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
         aside {
             flex-direction: column;
             div {
                 width: 100%;
+                h1 {
+                    font-size: 18px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 14px;
+                }
             }
         }
         .pedding {
             a {
+                font-size: 18px;
                 margin-top: 80px;
             }
         }
@@ -236,7 +252,7 @@
         a {
             width: 100%;
             margin: 50px auto;
- 
+            font-size: 18px;
         }
     }
 
