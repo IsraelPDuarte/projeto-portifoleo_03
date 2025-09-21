@@ -1,0 +1,19 @@
+#footer {
+    text-align: center;
+
+    p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-block: 10px 20px;
+    }
+}
+
+#footer .container-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-block: 10px;
+}

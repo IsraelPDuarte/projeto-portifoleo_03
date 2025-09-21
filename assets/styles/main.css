@@ -1,0 +1,243 @@
+#main {
+    width: 80%;
+    margin: 120px auto;
+}
+
+.apresentacao {
+    h1 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 78px;
+        color: #FFFFFF;
+        margin-block: 40px;
+    }
+
+    h2 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 29px;
+        color: #FFFFFF;
+    }
+
+    p {
+        
+        width: 68%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 29px;
+        color: #FFFFFF;
+    }
+
+    a {
+        display: inline-block;
+        border-radius: 15px;
+        padding: 10px 4%;
+        background-color: #74FAC0;
+        margin-block: 30px;
+
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 29px;
+        text-align: center;
+        color: #01091C;
+    }
+}
+
+.article {
+    padding-block: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 80px auto;
+    width: 100%;
+    background: rgba(1, 9, 28, 0.75);
+    border-radius: 20px;
+
+    div {
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-block: 70px;
+    }
+
+    h1 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 66px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 29px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.projetos {
+    h1 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 66px;
+        color: #FFFFFF;
+        
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        div {
+            width: 40%;
+            height: auto;
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+
+            span {
+                font-family: 'Inter';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 26px;
+                color: #FFFFFF;
+            }
+        }
+        h1 {
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 2rem;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.pedding {
+    
+    padding: 30px;
+    background: rgba(1, 9, 28, 0.9);
+    border-radius: 15px;
+     a {
+            
+            display: inline-block;
+            border: 1px solid #74FAC0;
+            border-radius: 15px;
+            padding: 8px 10px;
+
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 21px;
+            color: #74FAC0;
+
+            margin-top: 80px;
+        }
+}
+
+.ver-mais {
+    text-align: center;
+    justify-content: center;
+
+    a {
+            
+            display: inline-block;
+            border: 1px solid #74FAC0;
+            border-radius: 15px;
+            padding: 8px 30px;
+
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 21px;
+            color: #74FAC0;
+
+            margin-top: 30px;
+        }
+}
+@media screen and (max-width: 1050px) {
+    #main {
+        width: 90%
+    }
+    .projetos {
+        aside {
+            div {
+                width: 50%;
+            }
+        }
+
+        .pedding {
+            a {
+                width: 100%;
+                text-align: center;
+                margin-block: 30px 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #main {
+        width: 90%;
+    }
+    .apresentacao {
+        text-align: center;
+        h1 {
+            font-size: 64px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p {
+            width: 100%;
+            font-size: 20px;
+        }
+        a {
+            width: 100%;
+            margin-block: 50px;
+        }
+    }
+    .article {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            width: 95%;
+        }
+
+        div {
+            
+            padding-inline: 5px;
+            gap: 40px;
+            margin-block: 20px;
+        }
+    }
+    .projetos {
+        aside {
+            flex-direction: column;
+            div {
+                width: 100%;
+            }
+        }
+        .pedding {
+            a {
+                margin-top: 80px;
+            }
+        }
+    }
+    .ver-mais {
+        margin: auto;
+        a {
+            width: 100%;
+            margin: 50px auto;
+ 
+        }
+    }
+
+}

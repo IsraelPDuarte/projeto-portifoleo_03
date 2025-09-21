@@ -1,0 +1,48 @@
+/* RESET BÁSICO PARA ESTRUTURA SEMÂNTICA */
+
+/* Zera margens, paddings e aplica box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garante que elementos semânticos sejam tratados como blocos */
+
+/* Remove estilo de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove sublinhado padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define tipografia padrão */
+body {
+    background-image: url(/assets/images/be0281bf46d3af3dac7b6b4caecad460de58f168.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* Remove formatações padrões em imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Normaliza botões e inputs */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
