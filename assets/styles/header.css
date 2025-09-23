@@ -1,3 +1,20 @@
+.botao-hamburgue {
+    display: flex;
+    justify-content: end;
+    margin: 10px 10px 10px;
+    
+}
+.hamburger {
+    display: none;
+    background: rgba(1, 9, 28, 0.9);
+    border: 1px solid #74FAC0;
+    color: #74FAC0;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
 #header {
     width: 100%;
     nav {
@@ -11,10 +28,11 @@
         align-items: center;
         display: flex;
         flex-direction: row;
+        gap: 50px;
         &:nth-child(2) {
             justify-content: end;
         }
-        gap: 50px;
+        
     }
     nav:nth-child(1) {
         a {
@@ -31,7 +49,22 @@
 
 
 @media screen and (max-width: 767px) {
+    .hamburger {
+    display: block;
+  }
+
+  
+
+
+  #header.active {
+    display: flex; /* aparece quando ativado */
+  }
+
+
+
+
    #header {
+        display: none;
         nav {
             
             align-items: center;
@@ -53,4 +86,5 @@
             }
         }
    }
+        
 }
