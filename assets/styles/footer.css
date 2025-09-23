@@ -24,4 +24,8 @@
             font-size: 18px;
         }
     }
+
+    #footer .container-redes {
+        gap: 30px;
+    }
 }

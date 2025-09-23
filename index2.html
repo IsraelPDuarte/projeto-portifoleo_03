@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Hambúrguer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #444;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+  }
+
+}
+
+  </style>
+</head>
+<body>
+ <header id="header">
+  <nav>
+    <!-- Botão do menu (só aparece no mobile) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <ul class="menu">
+      <li><a href="#">Apresentação</a></li>
+      <li><a href="#">Habilidades</a></li>
+      <li><a href="#">Projetos</a></li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="#">Apresentação</a></li>
+      <li><a href="#">Habilidades</a></li>
+      <li><a href="#">Projetos</a></li>
+    </ul>
+
+    <ul class="social">
+      <li>
+        <a href="#"><img src="assets/images/instagram.png" alt=""></a>
+      </li>
+      <li>
+        <a href="#"><img src="assets/images/github.png" alt=""></a>
+      </li>
+      <li>
+        <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+  </script>
+</body>
+</html>
