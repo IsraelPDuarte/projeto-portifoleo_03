@@ -25,6 +25,7 @@ a {
 /* Define tipografia padrão */
 body {
     background-image: url(/assets/images/be0281bf46d3af3dac7b6b4caecad460de58f168.jpg);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;

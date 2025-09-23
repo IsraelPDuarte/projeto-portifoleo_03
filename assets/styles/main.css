@@ -163,6 +163,19 @@
     #main {
         width: 90%
     }
+
+    .article {
+        p {
+            width: 80%;
+            margin: auto;
+        }
+
+        div {
+            img {
+                width: 100px;
+            }
+        }
+    }
     .projetos {
         aside {
             div {
@@ -205,7 +218,7 @@
     }
     .article {
         h1 {
-            font-size: 50px;
+            font-size: 40px;
         }
         p {
             font-size: 20px;
